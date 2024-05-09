@@ -1,7 +1,8 @@
 import app from "./index.js";
 import mongoose from 'mongoose';
-
-const connect = async () => {
+import dotenv from 'dotenv';
+dotenv.config();
+async function connect () {
     try {
         await mongoose.connect(process.env.MONGO_URL, {
             useNewUrlParser: true,
