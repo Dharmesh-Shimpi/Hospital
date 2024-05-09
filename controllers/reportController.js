@@ -19,7 +19,8 @@ export default class reportController {
 
 	static async getReports(req, res) {
 		try {
-			const reports = await reportSchema.find();
+			const id = req.params.id;
+			const reports = await reportSchema.find({ patient: id });
 			res.status(200).json({ reports });
 		} catch (error) {
 			res.status(500).json({ message: error.messJage });
