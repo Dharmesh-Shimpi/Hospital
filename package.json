@@ -1,0 +1,28 @@
+{
+    "name": "hospital",
+    "version": "1.0.0",
+    "description": "app manages doctors and patients",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "test": "test",
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "hospital"
+    },
+    "keywords": [
+        "hospital"
+    ],
+    "author": "dharmeshshimpi",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "js-cookie": "^3.0.5",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.3.4"
+    }
+}
