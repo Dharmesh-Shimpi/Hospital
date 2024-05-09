@@ -28,7 +28,7 @@ export default class reportController {
 	}
 
 	static async getReportsByStatus(req, res) {
-		const { status } = req.params.status;
+		const { status } = req.params;
 		console.log(status);
 		try {
 			const reports = await reportSchema.find({ status });
