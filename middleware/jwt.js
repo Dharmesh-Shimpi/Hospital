@@ -1,5 +1,4 @@
 import jwt from 'jsonwebtoken';
-import Cookies from 'js-cookie';
 export const jwtAuth = (req, res, next) => {
 	const authHeader = req.headers['authorization'];
 	console.log(authHeader);

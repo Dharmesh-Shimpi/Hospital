@@ -1,5 +1,5 @@
 import doctorModel from '../model/doctorSchema.js';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
 export default class DoctorController {
